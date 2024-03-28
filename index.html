@@ -4,20 +4,276 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Leah Vaughan Portfolio</title>
 
-  <!-- UPDATE TITLE : <Your Name's> Portfolio  -->
-  <title> NAME-HERE Portfolio</title>
-
-  <!-- ADD LINKS TO YOUR CSS STYLE SHEETS HERE -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
 
 </head>
 
 <body>
-  <!-- TODO : FOLLOW THE TUTORIAL AND CREATE YOUR SITE -->
+  <nav id="desktop-nav">
+    <div class="logo"> Leah Vaughan</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo"> Leah Vaughan</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic.container">
+      <center><img src="./profile-pic.png" alt="Leah Vaughan Profile Picture" class="profile-pic"></center>
+    </div>
+    <div class="section__text">
+      <p style="color:rgb(85, 126, 128);" class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Leah Vaughan</h1>
+      <p style="color:rgb(85, 126, 128);" class="section__text__p2">Frontend Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./resume-example.pdf')">
+          Resume Here
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./linkedin.png" alt="My Linkedin Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/leah-vaughan-174664225/'">
+        <img src="./github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/lmv102'">
+      </div>
+    </div>
+  </section>
 
 
-
-  <!-- ADD THE LINK TO YOUR SCRIPT HERE -->
+<section id="about">
+  <p class="section__text__p1"><center style="color:rgb(85, 126, 128);">Get To Know More</center></p>
+  <h1 class="title">About Me</h1>
+  <div class="section-container">
+    <div class="section__pic-container">
+      <img src="./about-pic.png" alt="Profile picture" class="about-pic" >
+    </div>
+    <div class="about-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <img src="./experience.png" alt="experience icon" class="icon">
+          <h3>Experience</h3>
+          <p style="color:rgb(85, 126, 128);" >2+ years <br> Electrical Engineer</p>
+        </div>
+        <div class="details-container">
+          <img src="./education.png" alt="education icon" class="icon">
+          <h3>Education</h3>
+          <p style="color:rgb(85, 126, 128);" >B.Sc. Bachelors Degree<br> Highschool Diploma</p>
+        </div>
+      </div>
+      <div class="text-container">
+        <p style="color: rgb(0, 0, 0);"> Diagnostic problem solver with skills such as number analyzing, collaborating, and quick thinking. 
+          An improviser and problem solver when faced with adversity. 
+          Soft computer skills in a multitude of languages and programs. Notable mathematic skills. 
+          Advanced designing skills using Microsoft applications. Advanced communication skills.</p>
+      </div>
+    </div>
+  </div>
+  <img src="./arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+</section>
+<section id="experience">
+  <p class="section__text__p1"><center style="color:rgb(85, 126, 128);">Explore My</center></p>
+  <h1 class="title">Experience</h1>
+  <div class="experience-details.container">
+    <div class="about-containers">
+      <div class="details-container">
+        <h2 class="experience-sub-title">Frontend Developer</h2>
+        <div class="article-container">
+          <article>
+            <img src="./checkmark.png" alt="experience icon" class="icon">
+            <div>
+              <h3>HTML</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img src="./checkmark.png" alt="experience icon" class="icon">
+            <div>
+              <h3>JavaScript</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+          <article>
+            <img src="./checkmark.png" alt="experience icon" class="icon">
+            <div>
+              <h3>CSS</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img src="./checkmark.png" alt="experience icon" class="icon">
+            <div>
+              <h3>Linux</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img src="./checkmark.png" alt="experience icon" class="icon">
+            <div>
+              <h3>Python</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img src="./checkmark.png" alt="experience icon" class="icon">
+            <div>
+              <h3>C++</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="details-container">
+        <h2 class="experience-sub-title">Electrical Engineer</h2>
+        <div class="article-container">
+          <article>
+            <img src="./checkmark.png" alt="experience icon" class="icon">
+            <div>
+              <h3>YOLO</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img src="./checkmark.png" alt="experience icon" class="icon">
+            <div>
+              <h3>Git</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img src="./checkmark.png" alt="experience icon" class="icon">
+            <div>
+              <h3>MATLAB</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img src="./checkmark.png" alt="experience icon" class="icon">
+            <div>
+              <h3>Microsoft</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img src="./checkmark.png" alt="experience icon" class="icon">
+            <div>
+              <h3>Arduino</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img src="./checkmark.png" alt="experience icon" class="icon">
+            <div>
+              <h3>PIC</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="./arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+</section>
+</section>
+<section id="projects">
+  <p class="section__text__p1"><center style="color: rgb(85, 126, 128);">Browse My Recent</center></p>
+  <h1 class="title">Projects</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+    <div class="details-container color-container">
+      <div class="article-container">
+        <img src="./project-1.png" alt="Project 1" class="project.img">
+      </div>
+      <h2 class="experience-sub-title project-title">Project One</h2>
+      <div class="btn-container">
+        <button style="color: white;" class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/lmv102'">
+          GitHub
+        </button>
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/lmv102'">
+          Live Demo
+        </button>
+      </div>
+    </div>
+    <div class="details-container color-container">
+      <div class="article-container">
+        <img src="./project-2.png" alt="Project 2" class="project.img">
+      </div>
+      <h2 class="experience-sub-title project-title">Project Two</h2>
+      <div class="btn-container">
+        <button style="color: white;" class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/lmv102'">
+          GitHub
+        </button>
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/lmv102'">
+          Live Demo
+        </button>
+      </div>
+    </div>
+    <div class="details-container color-container">
+      <div class="article-container">
+        <img src="./project-3.png" alt="Project 3" class="project.img">
+      </div>
+      <h2 class="experience-sub-title project-title">Project Three</h2>
+      <div class="btn-container">
+        <button style="color: white;" class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/lmv102'">
+          GitHub
+        </button>
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/lmv102'">
+          Live Demo
+        </button>
+      </div>
+    </div></div>
+  </div>
+  <img src="./arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+</section>
+<section id="contact">
+  <p class="section__text__p1"><center style="color: rgb(85, 126, 128);">Get in Touch</center></p>
+  <h1 class="title">Contact Me</h1>
+  <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+      <img src="./email.png" alt="email icon" class="icon contact-icon email-icon">
+      <p><a style="color: rgb(85, 126, 128);" href="mailto:leahmarievaughan@gmail.com">Leahmarievaughan@gmail.com</a></p>
+      <div class="contact-info-container">
+        <img src="./linkedin.png" alt="Linkedin icon" class="icon contact-icon">
+        <p><a style="color: rgb(85, 126, 128);" href="https://www.linkedin.com/in/leah-vaughan-174664225/">LinkedIn</a></p>
+    </div>
+  </div>
+</section>
+<footer>
+  <nav>
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <p>Copyright &#169; 2024 Leah Vaughan. All Rights Reserved.</p>
+</footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
